@@ -1,33 +1,23 @@
 {
-  "name": "mern",
+  "name": "GoogleBooks",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "",
   "main": "server.js",
-  "engines": {
-    "node": "8.11.3",
-    "yarn": "1.12.3"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
-    "start": "if-env NODE_ENV=production && yarn run start:prod || yarn run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"yarn run client\"",
-    "client": "cd client && yarn run start",
-    "install": "cd client && yarn install",
-    "build": "cd client && yarn run build",
-    "heroku-postbuild": "yarn run build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pyromaniac14281/GoogleBooks-Search.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.18.7"
+  "bugs": {
+    "url": "https://github.com/pyromaniac14281/GoogleBooks-Search/issues"
   },
-  "dependencies": {
-    "axios": "^0.18.0",
-    "dotenv": "^6.2.0",
-    "express": "^4.16.3",
-    "if-env": "^1.0.4",
-    "mongodb": "^3.1.11",
-    "mongoose": "^5.4.4"
-  }
+  "homepage": "https://github.com/pyromaniac14281/GoogleBooks-Search#readme"
 }
